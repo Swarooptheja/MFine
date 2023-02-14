@@ -2,11 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
 import Footer from "./components/Footer"
+import { Allroutes } from './components/Allroutes';
 
 function App() {
   return (
     <div className="App">
-    <Home/>
+    <Allroutes/>
     <Footer/>
     </div>
   );

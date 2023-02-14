@@ -204,6 +204,7 @@ let reducer=(state=initdata,action)=>{
     if(action.type==getdata){
         return{
             ...state,
+            initdata:action.payload,
             Loading:false,
             error:false
         }
@@ -225,6 +226,6 @@ let reducer=(state=initdata,action)=>{
         }
     }
 
-    return action
+    return state
 }
 export {reducer}

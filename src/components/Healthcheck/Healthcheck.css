@@ -1,0 +1,31 @@
+#healthdatacontainer{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
+
+}
+#healthdatacontainer>div>img{
+    width: 100%;
+    border-radius: 1rem;
+}
+#bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+#bottom>div:nth-child(1)>h4{
+    color: red;
+    text-decoration: line-through;
+}
+#pricebtn{
+    padding: 5px 20px;
+    background-color: rgb(235, 98, 121);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}

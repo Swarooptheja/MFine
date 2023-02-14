@@ -1,0 +1,207 @@
+#homeheader{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+#homeheader>img{
+    width: 100%;
+}
+#homenext{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+#homenext>img{
+    width: 100%;
+}
+#homenext1{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    margin-bottom: 3rem;
+}
+#homenext1>div{
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+}
+#homenext1>div:nth-child(1){
+    background-color: #F2FBFF;
+}
+#homenext1>div:nth-child(2){
+    background-color: #FFF1ED;
+}
+
+.mainimg>img{
+    width: 100%;
+}
+
+#homenext1>div{
+    width: 100%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,2fr));
+    gap: 1rem;
+}
+#mainimage{
+    width: 100%;
+}
+
+#homenext2{
+    width: 70%;
+    margin: auto;
+}
+#homenext2>img{
+    width: 100%;
+}
+
+#homenext3{
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+#homenext3>div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,2fr));
+    background-color: #F2FBFF;
+    border-radius: 1rem;
+}
+#homepagematter{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+#seemorebtn{
+    padding: 10px 20px ;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+#homepagespe{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px,6fr));
+    gap: 0.3rem;
+}
+#homepagespe>div>img{
+    width: 100%;
+}
+#health{
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+#healthfirst{
+    /* border: 1px solid red; */
+    background:linear-gradient( 87deg ,#FFE9E2,#FBEDFF);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+#healthcheck{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,4fr));
+    gap: 1rem;
+   
+}
+.test{
+    text-align: left;
+    color: red;
+}
+#testprice{
+    text-align: left;
+    text-decoration-line: line-through;
+    color: red;
+}
+.mrp_price{
+    display: inline;
+    text-decoration: line-through;
+    text-decoration-color: #FD6684;
+    font-size: 20px;
+    text-align: left;
+}
+.slprice{
+    display: inline;
+    margin-left: 2rem;
+}
+#healthcheck2{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    gap: 2rem;
+    margin-top: 3rem;
+   
+}
+#healthsecond{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    gap: 1rem;
+    width: 100%;
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    background:linear-gradient( 87deg ,#FFE9E2,#FBEDFF);
+    padding: 10px;
+
+}
+#healthsecond>div:nth-child(2)>img{
+    width: 100%;
+}
+#selfcheck{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px,6fr));
+    gap: 0.3rem;
+
+}
+#selfcheck>div>img{
+    width: 100%;
+}
+#Testimonials{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4rem;
+    
+}
+#Testimonials>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 1rem;
+    padding: 10px;
+}
+#Testimonials>div>h4{
+    color: red;
+}
+#Testimonials>div>h3{
+    text-align: left;
+
+}
+#notsure{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,4fr));
+    gap: 0.3rem;
+    margin-top: 3rem;
+}

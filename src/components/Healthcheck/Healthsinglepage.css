@@ -1,0 +1,40 @@
+#singlepagehealth{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    gap: 1rem;
+}
+#singlepagesecond{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20% 50% 20%;
+}
+
+#singlepagefirst>img{
+    width: 100%;
+}
+#secondfirst{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    gap: 1rem;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 2rem; /* set the size of the icon */
+  }
+
+  #secondthird{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,3fr));
+    gap: 0.3rem;
+    background-color: bisque;
+    border-radius: 1rem;
+  }

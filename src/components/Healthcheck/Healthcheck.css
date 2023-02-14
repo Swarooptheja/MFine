@@ -3,12 +3,11 @@
     margin: auto;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px,3fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px,4fr));
 
 }
-#healthdatacontainer>div>img{
+#keyimage{
     width: 100%;
-    border-radius: 1rem;
 }
 #bottom{
     width: 100%;
@@ -28,4 +27,14 @@
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+    color: white;
+}
+#healthdatabottom{
+    width: 90%;
+    margin: auto;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
 }

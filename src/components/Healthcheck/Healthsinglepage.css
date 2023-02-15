@@ -1,0 +1,62 @@
+#singlepagehealth{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,2fr));
+    gap: 1rem;
+}
+#singlepagesecond{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 20% 50% 20%;
+}
+
+#singlepagefirst>img{
+    width: 100%;
+}
+#secondfirst{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,2fr));
+    gap: 1rem;
+}
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 2rem; /* set the size of the icon */
+  }
+
+  #secondthird{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,3fr));
+    gap: 0.3rem;
+    background-color: bisque;
+    border-radius: 1rem;
+  }
+  #singlebottom{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-top:3rem;
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  #singlebottom>div:nth-child(2)>button{
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 1rem;
+  }

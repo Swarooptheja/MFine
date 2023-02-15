@@ -1,3 +1,4 @@
+import { faildata, getdata, reqdata } from "./actiontype"
 
 
 let initdata={
@@ -200,6 +201,31 @@ let initdata={
 }
 
 let reducer=(state=initdata,action)=>{
-    return action
+    if(action.type==getdata){
+        return{
+            ...state,
+            initdata:action.payload,
+            Loading:false,
+            error:false
+        }
+    }
+    if(action.type==faildata){
+        return{
+            ...state,
+            initdata:[],
+            Loading:false,
+            error:true
+        }
+    }
+    if(action.type==reqdata){
+        return{
+            ...state,
+            initdata:[],
+            Loading:true,
+            error:false
+        }
+    }
+
+    return state
 }
 export {reducer}

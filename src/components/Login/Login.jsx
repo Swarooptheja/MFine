@@ -7,7 +7,7 @@ import profile from "../Navbar/logo.png";
 
 import axios from "axios";
 // import * as types from "../../Redux/Login_Redux/Action_Type";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Login = () => {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const Navigate = useNavigate();
-
+   const location=useLocation()
   const HandleSubmit = (e) => {
     e.preventDefault();
     let data = {
@@ -38,7 +38,8 @@ const Login = () => {
           position: "top",
           duration: 1500,
         });
-        Navigate("/");
+        let comingfrom=location.state.from || "/"
+        Navigate(comingfrom,{replace:'true'});
       } else {
         toast({
           title: `Incorrect credential`,

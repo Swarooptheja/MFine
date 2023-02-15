@@ -17,17 +17,37 @@ const Navbar = () => {
   const [classes, setclasses] = useState("donotshownavbar");
   const Navi = useNavigate();
 
+  let handlesignup=()=>{
+    Navi("/signup")
+  }
+  let handlelogin=()=>{
+    Navi("/login")
+  }
+  let handleimg=()=>{
+    Navi("/")
+  }
+
   return (
     <>
       <div className="Navbar_container">
         <nav>
-          <img src={circuitlogo} alt="circuitlogo" />
+          <img onClick={handleimg} src={circuitlogo} alt="circuitlogo" />
+          <div id="navlink">
+            <div>
+              <a href="/healthcheck">
+                <h3>Health Check</h3>
+              </a>
+            </div>
+            <div>
+              <a href="/healthcheck"><h3>Self Checks</h3></a>
+            </div>
+          </div>
           <ul className={classes}>
             {/* ************************************************ */}
 
             {isAuth ? (
               <>
-                <h1>{local.fullname}</h1>
+                <h1>Welcome {local.fullname}</h1>
               </>
             ) : (
               <li>
@@ -50,6 +70,7 @@ const Navbar = () => {
                         fontSize={"1.2rem"}
                         width="16rem"
                         border={"none"}
+                        onClick={handlelogin}
                       >
                         Login
                       </MenuItem>
@@ -57,6 +78,7 @@ const Navbar = () => {
                         fontSize={"1.2rem"}
                         width="16rem"
                         border={"none"}
+                        onClick={handlesignup}
                       >
                         SignUp
                       </MenuItem>

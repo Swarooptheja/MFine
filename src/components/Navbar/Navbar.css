@@ -6,7 +6,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  /* margin-top: 5rem; */
 }
 
 nav {
@@ -55,6 +56,13 @@ nav > img {
 
 .Avatar {
   font-size: 2.6rem;
+}
+
+#navlink{
+  width: auto;
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 2rem;
 }
 
 /* _________________________media query for small screen  */

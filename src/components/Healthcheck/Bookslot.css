@@ -11,3 +11,99 @@
     align-items: center;
     justify-content: space-evenly;
 }
+#bookslotcontainer{
+    margin-top: 5rem;
+}
+#labs{
+    width: 50%;
+    margin: auto;
+}
+#labbtn{
+    width: 80%;
+    background: #eafbff;
+    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#hospitalprice{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,4fr));
+}
+#hospital{
+    width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: left;
+    
+}
+#one{
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#buttonid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   gap: 1rem;
+}
+#buttonid>div>button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+#buttonid>div>button:hover{
+    background-color: aqua;
+}
+#buttonid>div>button:active{
+    background-color: aqua;
+}
+#buttonid>div>button:target{
+    background-color: aqua;
+
+}
+#bottombuttonid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+#bottombuttonid>div>button{
+    width: 100%;
+    /* background-color: ; */
+}
+.blackback:disabled{
+    cursor: not-allowed;
+    background-color: rgb(190, 190, 250);
+}
+#bottombuttonid{
+    width: 50%;
+    margin: auto;
+}
+.blackback{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+
+}
+button{
+    cursor: pointer;
+}

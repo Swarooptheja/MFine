@@ -7,13 +7,6 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { TransitionExample } from '../Modal';
 export const Healthsinglepage = () => {
     let data=JSON.parse(localStorage.getItem("singledata"))||[];
-    let [state,setstate]=useState(0)
-    let handle=()=>{
-        setstate((state)=>state+1)
-    }
-    useEffect(()=>{
-
-    },state)
   return (
     <>
     <h1 style={{width:"90%",textAlign:"left", margin:"auto"}}>{data.name}</h1>
@@ -31,11 +24,21 @@ export const Healthsinglepage = () => {
                 </div>
             </div>
             <div className="icon-container">
-              <img src="https://assets.mfine.co/api/contentservice/attachments/download/catalog-manager/catalog-item/images/Why_hypertension_1639561444116.jpg/w_150,h_150" alt="" />
+                <div>
+                    <img src="https://assets.mfine.co/api/contentservice/attachments/download/catalog-manager/product/images/Group_23381_1662489313921.png" alt="" />
+                    <h3>Complete blood report</h3>
+                </div>
+                <div>
+                    <img src="https://assets.mfine.co/api/contentservice/attachments/download/catalog-manager/product/images/Group_23373_1668507092558.png" alt="" />
+                    <h3>Lipid Test</h3>
+                </div>
+                <div>
+
               <button style={{backgroundColor:"white", border:"none"}}>
                 <TransitionExample/>
                {/* <BsFillArrowRightCircleFill size={50} className="icon" cursor={"pointer"} color={"orangered"} onClick={handle}/> */}
               </button>
+                </div>
             </div>
             <div id='secondthird'>
                 <div>
@@ -58,7 +61,9 @@ export const Healthsinglepage = () => {
             <h1>{data.name}</h1>
         </div>
         <div>
-            <button>Book Now</button>
+            <button>
+                <a style={{textDecoration:"none",color:"white"}} href="/bookslot">Bookslot</a>
+            </button>
         </div>
     </div>
     </>
